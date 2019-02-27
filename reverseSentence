@@ -1,0 +1,28 @@
+package InterviewPrograms;
+
+public class reverseSentence 
+{
+	//REVERSE A WORD IN A STRING
+	public static void main(String[] args) 
+	{
+		String x="Happy New Year";
+		String y[]=x.split(" ");
+		String r=" ";
+		
+		for (int i = y.length-1; i >= 0; i--)
+		{
+		  System.out.print(y[i] + " ");			  
+		}
+		
+		
+		System.out.println();
+		
+		char[] c1=x.toCharArray();
+		for (int i1 = c1.length-1; i1 >= 0; i1--) 
+		{
+			r=r+c1[i1];
+		}
+		System.out.println("Rev of String is" + x +"is" + r);
+	}
+
+}
