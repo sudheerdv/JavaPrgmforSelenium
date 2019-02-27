@@ -1,0 +1,37 @@
+package InterviewPrograms;
+
+import java.util.Scanner;
+
+public class Palindrome 
+{
+    //TO CHECK STRING IS PALINDROME
+	public static void main(String[] args) 
+	{
+		String orgString,revString="";	
+		System.out.println("Enter a String");
+		Scanner scn=new Scanner(System.in);
+		String str=scn.nextLine();
+		orgString=str;
+		char[] c1=str.toCharArray(); 
+		
+		for(int i=c1.length-1;i>=0;i--)
+		{
+			revString=revString+c1[i];
+		}		
+		System.out.println(orgString);
+		System.out.println(revString);
+		
+		if(orgString.equals(revString))
+		{
+			System.out.println("String is palindrome");
+		}
+		else
+		{
+			System.out.println("String is Not palindrome");
+		}
+		}
+	}
+
+
+
+
