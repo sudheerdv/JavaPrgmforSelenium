@@ -1,0 +1,52 @@
+
+import java.util.Scanner;
+
+
+public class Palindrome {
+
+	public static void main(String[] args) 
+	{
+		/*//1.Palindrome(Ex: "1221" , "madam" , "refer")
+		  int n,r,sum=0;
+		  System.out.println("Enter a number");
+		  Scanner sc=new Scanner(System.in);
+		  n=sc.nextInt();
+		  int n1=n;
+		  while(n>0)
+		  {
+		    r=n%10;
+		    sum=(sum*10)+r;
+		    n=n/10;
+		  }
+		  
+		  if(n1==sum)
+		  {
+			  System.out.println("palindrome");
+		  }
+		  else
+		  {
+			  System.out.println("not palindrome");
+		  }*/
+		
+	//2.MADAM	
+	 String org,rev="";
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("Enter a string");
+	 org=sc.nextLine();
+	 //int len=org.length();	 
+     for(int i=org.length()-1;i>=0;i--)
+     {
+ 	 rev=rev+org.charAt(i);    			
+     }	
+		if(org.equals(rev))
+		{
+			System.out.println("Palindorm");
+		}
+		else
+		{
+			System.out.println("not palindrome");
+		}
+	
+	}
+
+}
