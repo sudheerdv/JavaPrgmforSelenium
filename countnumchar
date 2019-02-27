@@ -1,0 +1,30 @@
+package InterviewPrograms;
+
+import java.util.Scanner;
+public class countnumchar 
+{	//CHAR COUNT
+	public static void main(String[] args) 
+	{	
+		int nCount=0;
+		int cCount=0;
+		int spCount=0;
+		System.out.println("Enter a String");
+        Scanner scn=new Scanner(System.in);
+        String  str=scn.nextLine();
+        char[] c1=str.toCharArray();        
+        for(int i=0;i<=c1.length-1;i++)
+        {
+        	if(c1[i]>=48 && c1[i]<=57)
+        	{nCount++;}        	
+        	else if(c1[i]>=65 && c1[i]<=90)
+        	{cCount++;}
+        	else if(c1[i]>=97 && c1[i]<=122)
+        	{cCount++;}
+        	else
+        	{spCount++;}
+        }        
+        System.out.println("number count" + nCount );
+        System.out.println("char count" + cCount++); 
+        System.out.println("special char count" +spCount);
+	}
+}
