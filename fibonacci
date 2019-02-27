@@ -1,0 +1,29 @@
+package InterviewPrograms;
+
+import java.util.Scanner;
+
+public class fibonacci 
+{
+	//FIBONACCI NUMBER
+	public static void main(String[] args) 
+	{
+		int num;
+		int f1=0,f2=1,sum=0;
+        Scanner scn=new Scanner(System.in);
+		
+		System.out.println("Enter a number");
+		num=scn.nextInt();
+		System.out.println(f1);
+		System.out.println(f2);
+		
+		while(num>2)
+		{
+			sum=f1+f2;
+			System.out.println(sum);
+			f1=f2;
+			f2=sum;
+			num--;
+		}
+	}
+
+}
