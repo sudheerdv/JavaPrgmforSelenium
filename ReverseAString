@@ -1,0 +1,16 @@
+
+public class ReplaceSubstring
+{
+	public static void main(String[] args) 
+	{
+		String string1="Hi i am selenium use selenium for Automation by selenium jar";
+		String s1="selenium";
+		String s2="Appium";
+
+		
+		String chngString=string1.replace(s1, s2);
+		System.out.println(chngString);
+		
+	}
+
+}
