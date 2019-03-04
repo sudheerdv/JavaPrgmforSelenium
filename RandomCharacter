@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class inttochar 
+{
+  public static void main(String[] args) 
+  {
+	  for(int i=1;i<=100;i++)
+	  {  
+		  if(!(i%3==0))
+		  {
+			  System.out.println(i + " Oye!!!");			  
+			  
+		  }
+		  else
+		  {
+			  Random rnd = new Random();
+			  char c = (char) (rnd.nextInt(26) + 'b');
+			  System.out.println(c);
+		  }
+	  }
+  }
+}
