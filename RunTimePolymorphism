@@ -1,0 +1,36 @@
+// SuperClass
+
+package RunTimePolymorphism;
+
+public class superClass
+{
+	public void method1()
+	{
+		System.out.println("super class method1");
+	}
+}
+
+// subClass - in seperate file.
+
+package RunTimePolymorphism;
+
+public class subClass extends superClass
+{
+	@Override
+	public void method1()
+	{
+		System.out.println("subClass method1");
+	}
+
+	public static void main(String[] args)
+	{
+		subClass s=new subClass();
+		s.method1();		
+		
+		
+		//Method1() in super class overrides by sub class method1() and executes sub class method1() function at run time
+		superClass s1=new subClass();
+		s1.method1();
+	}
+}
+
