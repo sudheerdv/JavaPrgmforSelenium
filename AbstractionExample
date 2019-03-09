@@ -1,0 +1,30 @@
+// Abstarct Method
+
+package AbstarctionExample;
+
+abstract class Mobile 
+{
+  //Declare abstract method - has only declartion
+	
+	public abstract void sendMsg();
+}
+
+
+//Another java file with sub name
+
+package AbstarctionExample;
+
+public class samsung extends Mobile
+{
+	@Override
+	public void sendMsg() {
+	System.out.println("Message Sent... ");
+}
+	
+	public static void main(String[] args)
+	{
+		Mobile m=new samsung();		
+	    m.sendMsg();	
+	}
+	
+}
