@@ -1,0 +1,39 @@
+// Parent Class in one file
+
+package InhertianceExample;
+
+public class parentClass 
+{
+	public void method1()
+	{
+		System.out.println("Method1..Executed");
+	}
+	
+	public void method2()
+	{
+		System.out.println("Method2..Executed");
+	}
+}
+
+
+//Child class in Another file
+
+package InhertianceExample;
+
+public class childClass extends parentClass {
+	
+	public void method3()
+	{
+		System.out.println("Method3..Executed");
+	}
+
+	public static void main(String[] args) 
+	{
+		
+		childClass c=new childClass();
+		c.method1();
+		c.method2();
+		c.method3();
+	}
+
+}
