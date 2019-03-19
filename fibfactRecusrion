@@ -1,0 +1,53 @@
+package Bhanu;
+
+public class Fibonacci 
+{
+	int num=0;
+	static int totfib;
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		int n=4;
+		for (int i = 0; i < n; i++) 
+		{
+		totfib=fib(n);
+		}
+		int totfact=fact(n);
+		System.out.println(totfib);		
+		System.out.println(totfact);	
+	}
+	
+	private static int fib(int number) 	
+	{
+		int output;
+		if(number==0 || number==1)
+		{
+			return 1;
+		}
+		else
+		{		
+				output=fib(number-1)+fib(number-2);
+				return output;
+		}
+			
+			
+		}	
+	
+	private static int fact(int number) 	
+	{
+		int output;
+		if(number==0 || number==1)
+		{
+			return 1;
+		}
+		else
+		{
+			output=fact(number-1)*number;
+			return output;
+		}
+		
+	}
+	
+}
+
+
