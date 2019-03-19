@@ -1,0 +1,28 @@
+package Bhanu;
+
+public class StringDemo 
+{
+	public static void main(String[] args) 
+	{		
+		String str="aABC123EFG678IJK9";		
+		/*String str1=str.replaceAll("[^0-9]", "");
+		String str2=str.replaceAll("[^A-Z]", "");		
+		int i=Integer.parseInt(str1);
+		System.out.println(i);
+		System.out.println(str2);*/
+		
+		String s=str.substring(4,7);
+		int I1=Integer.parseInt(s);
+		
+		String s1=str.substring(10, 13);
+		int I2=Integer.parseInt(s1);
+		String s2=str.substring(16);
+		int I3=Integer.parseInt(s2);
+		System.out.println(I1);
+		System.out.println(I2);
+		System.out.println(I3);
+		int I4= I1+I2+I3;
+		
+		System.out.println(I4);				
+	}  
+}
