@@ -1,0 +1,32 @@
+package Bhanu;
+
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
+public class StringPattern
+{
+	public static void main(String[] args) {
+  
+	String[] str1=str.split(" ");
+	String rev=" ";
+	String rev1=" ";
+	for (int i = str1.length-1; i >= 0; i--) 
+	{	
+		System.out.print(str1[i] +" ");		
+	}   
+	
+	for (int k = str1.length-1; k >=0 ; k--)
+	{
+	 char[] c1=str1[k].toCharArray();
+		
+	for (int i = c1.length-1; i >= 0; i--)
+	{
+		rev1=rev1+c1[i];
+	}					
+	}
+	
+	System.out.println(rev1);
+		
+}	
+	
+}	
+
